@@ -154,6 +154,8 @@ The built-in cache providers are (with `Souvenir = require("souvenir")`)
 
 * `Souvenir.CacheProviders.Memory` in-memory storage.
 
+* `Souvenir.CacheProviders.Disk` writes cache to the file system
+
 * `Souvenir.CacheProviders.Redis` uses redis. This cache provider takes one argument, a [node_redis](https://github.com/mranney/node_redis) client. You are responsible for initializing the client (providing credentials, optionally selecting a database, etc.) with `require("redis").createClient()`.
 
 See the `/demo/` directory of this repository for examples of using each cache provider.
